@@ -21,6 +21,11 @@ THIS IS NOT A PROFESSIONAL CODE, ITS SOMETHING I MADE IN SPARE TIME
 - proxies
 
 ## to be added
-- rampage mode (attack everything)
-- hostile mode (attack players)
-- griefing (self explanatory) [far future]
+- rampage mode (attack everything) [done]
+- hostile mode (attack players) [done]
+- griefing (self explanatory) [done]
+- body guard mode (protect players)
+
+## problems:
+bot friendly fire
+
