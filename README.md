@@ -25,6 +25,7 @@ THIS IS NOT A PROFESSIONAL CODE, ITS SOMETHING I MADE IN SPARE TIME
 - hostile mode (attack players) [done]
 - griefing (self explanatory) [done]
 - body guard mode (protect players)
+- clearing cache prompt after each season
 
 ## problems:
 bot friendly fire
