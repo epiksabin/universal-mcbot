@@ -23,7 +23,7 @@ THIS IS NOT A PROFESSIONAL CODE, ITS SOMETHING I MADE IN SPARE TIME
 ## to be added
 - rampage mode (attack everything) [done]
 - hostile mode (attack players) [done]
-- griefing (self explanatory) [done]
+- griefing (self explanatory) [done but highly unstable, not reccomended for now]
 - body guard mode (protect players)
 - clearing cache prompt after each season
 
