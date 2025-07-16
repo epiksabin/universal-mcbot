@@ -261,22 +261,27 @@ function startSpamAndMovement(bot, username, chatLog) {
   }, 500);
 
   // grief mode (destroy nearby blocks like nuker)
-  const griefInterval = setInterval(() => {
-    if (!SELECTED_MODES.includes('grief')) return;
+const griefInterval = setInterval(async () => {
+  if (!SELECTED_MODES.includes('grief')) return;
+  if (bot.targetDigBlock) return; // Already digging
 
-    const pos = bot.entity.position.floored();
-    for (let y = -1; y <= 1; y++) {
-      for (let x = -1; x <= 1; x++) {
-        for (let z = -1; z <= 1; z++) {
-          const block = bot.blockAt(pos.offset(x, y, z));
-          if (block && block.diggable && block.name !== 'air') {
-            bot.dig(block);
-            return;
+  const pos = bot.entity.position.floored();
+  for (let y = -1; y <= 1; y++) {
+    for (let x = -1; x <= 1; x++) {
+      for (let z = -1; z <= 1; z++) {
+        const block = bot.blockAt(pos.offset(x, y, z));
+        if (block && block.diggable && block.name !== 'air') {
+          try {
+            await bot.dig(block);
+          } catch (err) {
+            console.warn(`[${bot.username}] Digging failed: ${err.message}`);
           }
+          return;
         }
       }
     }
-  }, 300);
+  }
+}, 300);
 
   // clear all on quit
   bot.once('end', () => {
