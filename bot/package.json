@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "https-proxy-agent": "^7.0.6",
+    "mineflayer": "^4.30.0",
+    "socks-proxy-agent": "^8.0.5"
+  }
+}
