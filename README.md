@@ -11,8 +11,8 @@ THIS IS NOT A PROFESSIONAL CODE, ITS SOMETHING I MADE IN SPARE TIME
 - run `bot.js` via `node bot.js` also in cmd
   - to bypass authme registration per ip, create a `proxies.txt` and input your proxies in format of `socks5://127.0.0.1:9050` - `http://proxy.example.com:8080` - `socks4://proxy.host:1080`
 - discord webhook is optional
-make sure to configure the top part of the code before continuing
 
+make sure to configure the top part of the code before continuing
 if you want to *annoy* another server, delete `.\chatlogs\` and `used_usernames.json` to delete the 'cache'
 
 ## features (for now)
