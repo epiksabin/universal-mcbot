@@ -3,7 +3,7 @@ a minecraft tool to annoy players and servers **educational purposes**
 THIS IS NOT A PROFESSIONAL CODE, ITS SOMETHING I MADE IN SPARE TIME
 
 ## how2run
-- install nodejs (if you have it then skip this step)
+- install [nodejs](https://nodejs.org/en/download/current) (if you have it then skip this step)
 - download the files
 - open command prompt and cd into the installed folder
   - alternatively you can type `cmd` into the path thingy above at the file explorer
